@@ -1,0 +1,39 @@
+{
+  "name": "ts-esm-babel-template",
+  "version": "1.0.0",
+  "description": "Babel template for compiling ts to esm",
+  "type": "module",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RepComm/ts-esm-babel-template.git"
+  },
+  "keywords": [
+    "typescript",
+    "esmodules",
+    "babel",
+    "template"
+  ],
+  "author": "Jonathan Crowder",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/RepComm/ts-esm-babel-template/issues"
+  },
+  "homepage": "https://github.com/RepComm/ts-esm-babel-template#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.14.0",
+    "@babel/plugin-transform-typescript": "^7.10.5",
+    "@babel/preset-env": "^7.14.1"
+  },
+  "scripts": {
+    "build": "babel src --extensions .ts --copy-files -d lib",
+    "start": "node ."
+  },
+  "dependencies": {
+    "@types/node": "^16.3.1",
+    "@types/ws": "^7.4.6",
+    "discord.js": "^12.5.3",
+    "ws": "^7.5.3"
+  }
+}
